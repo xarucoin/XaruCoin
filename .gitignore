@@ -1,0 +1,9 @@
+
+XaruCoin.app
+Makefile
+*.o
+*.mk
+*.a
+src/qt/res/icons/Thumbs.db
+qrc_bitcoin.cpp
+*.qm
