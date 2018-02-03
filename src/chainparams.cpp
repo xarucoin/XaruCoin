@@ -86,6 +86,15 @@ public:
 
         vSeeds.push_back(CDNSSeedData("n0", "159.65.6.12:23450"));
         vSeeds.push_back(CDNSSeedData("n1", "46.101.177.46:23450"));
+        vSeeds.push_back(CDNSSeedData("n2", "13.124.125.253:57706"));
+        vSeeds.push_back(CDNSSeedData("n3", "138.68.68.149:45532"));
+        vSeeds.push_back(CDNSSeedData("n4", "5.189.152.63:23450"));
+        vSeeds.push_back(CDNSSeedData("n5", "95.121.49.87:50094"));
+        vSeeds.push_back(CDNSSeedData("n6", "46.4.88.116:59634"));
+        vSeeds.push_back(CDNSSeedData("n7", "173.249.7.89:50476"));
+        vSeeds.push_back(CDNSSeedData("n8", "147.135.130.119:23450"));
+        vSeeds.push_back(CDNSSeedData("n9", "79.144.70.55:50626"));
+        
 
         
 
