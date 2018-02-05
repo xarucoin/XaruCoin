@@ -20,21 +20,27 @@
 - Min TX Fee: 0.0001 XAR
 
 - POS BLOCKS REWARDS:
-    - From block 1 to 50000 : 80 XAR
+    - From block 1 to 3500 : 80 XAR
+    - From block 3501 to 5000 : 500 XAR
+    - From block 5001 to 50000 : 80 XAR
     - From block 50001 to 100000 : 90 XAR
     - From block 100001 to 140000 : 100 XAR
     - From block 140001 to 210000 : 50 XAR
     - From block 210001 to end : 30 XAR
 
 - STAKING REWARDS (30% FROM POS BLOCKS):
-    - From block 1 to 50000 : 24 XAR
+    - From block 1 to 3500 : 24 XAR
+    - From block 3501 to 5000 : 150 XAR
+    - From block 5001 to 50000 : 24 XAR
     - From block 50001 to 100000 : 27 XAR
     - From block 100001 to 140000 : 30 XAR
     - From block 140001 to 210000 : 15 XAR
     - From block 210001 to end : 9 XAR
 
  - MASTERNODE REWARDS (70% FROM POS BLOCKS):
-    - From block 1 to 50000 : 56 XAR
+    - From block 1 to 3500 : 56 XAR
+    - From block 3501 to 5000 : 350 XAR
+    - From block 5001 to 50000 : 56 XAR
     - From block 50001 to 100000 : 63 XAR
     - From block 100001 to 140000 : 70 XAR
     - From block 140001 to 210000 : 35 XAR
@@ -42,6 +48,9 @@
 
 - POW REWARDS:
     - From block 1 to  100 : 0 XAR (AntiInstamine)
-    - From block 101 to  100000 : 30 XAR
+    - From block 101 to  3500 : 30 XAR
+    - From block 3501 to 5000 : 50 XAR
+    - From block 5001 to  100000 : 30 XAR
     - From block 100001 to  200000 : 40 XAR
     - From block 200001 to 400000 : 50 XAR
+    

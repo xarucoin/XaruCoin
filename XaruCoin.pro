@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = XaruCoin-qt
-VERSION = 1.2.0.1
+VERSION = 1.3.0.0
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 DEFINES += ENABLE_WALLET
 DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE

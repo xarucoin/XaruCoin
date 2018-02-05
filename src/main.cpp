@@ -1128,6 +1128,17 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
         return bnProofOfStakeLimit;
 }
 
+/*
+- POW REWARDS:
+
+    - From block 1 to  100 : 0 XAR (AntiInstamine)
+    - From block 101 to  3500 : 30 XAR
+    - From block 3501 to 5000 : 50 XAR
+    - From block 5001 to  100000 : 30 XAR
+    - From block 100001 to  200000 : 40 XAR
+    - From block 200001 to 400000 : 50 XAR
+*/
+
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees, int nHeight)
 {
@@ -1139,6 +1150,9 @@ int64_t GetProofOfWorkReward(int64_t nFees, int nHeight)
         }else if(pindexBest->nHeight <= 100)
         {
             nSubsidy = 0 * COIN;
+        }else if(pindexBest->nHeight >= 3500 &&  pindexBest->nHeight <= 5000)
+        {
+            nSubsidy = 50 * COIN;
         }else if(pindexBest->nHeight <= 100000)
         {
             nSubsidy = 30 * COIN;
@@ -1157,7 +1171,10 @@ int64_t GetProofOfWorkReward(int64_t nFees, int nHeight)
 
 /*
 - POS BLOCKS REWARDS:
-    - From block 1 to 50000 : 80 XAR
+
+    - From block 1 to 3500 : 80 XAR
+    - From block 3501 to 5000 : 500 XAR
+    - From block 5001 to 50000 : 80 XAR
     - From block 50001 to 100000 : 90 XAR
     - From block 100001 to 140000 : 100 XAR
     - From block 140001 to 210000 : 50 XAR
@@ -1169,8 +1186,11 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
 {
     int64_t nSubsidy = 0 * COIN;
     if (pindexBest->nMoneySupply < MAX_MONEY){
-       
-       if(pindexBest->nHeight <= 50000)
+        if(pindexBest->nHeight >= 3500 &&  pindexBest->nHeight <= 5000)
+        {
+            nSubsidy = 500 * COIN;
+        }
+        else if(pindexBest->nHeight <= 50000)
         {
             nSubsidy = 80 * COIN;
         }else if(pindexBest->nHeight <= 100000)
@@ -4292,7 +4312,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    int64_t ret = blockValue * 0.70; //75% for masternodes
+    int64_t ret = blockValue * 0.70; //70% for masternodes
 
     return ret;
 }
