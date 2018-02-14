@@ -1,3 +1,6 @@
+# Visit our wiki if you need help https://github.com/xarucoin/XaruCoin/wiki
+
+
 # XaruCoin Specifications:
 - POW+POS+MasterNodes
 - Algo: X11
