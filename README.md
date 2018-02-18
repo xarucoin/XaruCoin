@@ -57,10 +57,9 @@
     - From block 100001 to  200000 : 40 XAR
     - From block 200001 to 400000 : 50 XAR
     
-#Nodes
+# Nodes
 
 ```
-Peers - XaruCoin
 addnode=1.52.188.50:50741
 addnode=100.11.60.41:49780
 addnode=103.1.239.25:51562
