@@ -1,5 +1,8 @@
+# Links
+
 ## Visit our wiki if you need help https://github.com/xarucoin/XaruCoin/wiki
 ## Contact us on discord https://discord.gg/H2pAGmY
+## Add Node List https://github.com/xarucoin/XaruCoin/wiki/Nodes
 
 # XaruCoin Specifications:
 - POW+POS+MasterNodes
